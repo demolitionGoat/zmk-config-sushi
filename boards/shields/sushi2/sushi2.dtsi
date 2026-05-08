@@ -42,7 +42,7 @@
         rows = <6>;
 		
 		matrix {
-			kscan = <&kscanMatrix>
+			kscan = <&kscanMatrix>;
 		};
 		
 		direct {
