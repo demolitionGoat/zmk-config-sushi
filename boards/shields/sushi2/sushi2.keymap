@@ -1,0 +1,52 @@
+// This file was generated from a template. Edit it to match your keyboard.
+// See https://zmk.dev/docs/development/hardware-integration/new-shield for more instructions.
+
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+
+/ {
+    // Define a default keymap here.
+    // See https://zmk.dev/docs/development/hardware-integration/new-shield#default-keymap.
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer { // Layer 0
+			display-name = "base";
+            bindings = <
+                &kp CARET &kp Q     &kp W     &kp O     &kp U     &kp Z          &kp B     &kp F     &kp J     &kp G     &kp P     &kp SQT
+                &kp TAB   &kp A     &kp S     &kp E     &kp R     &kp D          &kp H     &kp I     &kp N     &kp L     &kp T     &kp RET
+                &kp LT    &kp Y     &kp X     &kp C     &kp V                              &kp K     &kp M     &kp SEMI  &kp DOT   &kp MINUS   
+                                                               &kp LGUI                &kp DEL
+                                                                 &kp LSHIFT          &mo 1
+                                                                   &kp SPACE       &kp BSPC
+                                                                     &kp LCTRL   &kp LALT
+            >;
+			sensor-bindings = <
+				&inc_dec_kp RIGHT    LEFT
+				&inc_dec_kp UP       DOWN
+			>;
+        };
+		righttoggle_layer { // Layer 1
+			display-name = "toggled";
+            bindings = <
+                &kp CARET &kp Q     &kp W     &kp O     &kp U     &kp Z          &kp B     &kp F     &kp J     &kp G     &kp P     &kp SQT
+                &kp TAB   &kp A     &kp S     &kp E     &kp R     &kp D          &kp H     &kp I     &kp N     &kp L     &kp T     &kp RET
+                &kp LT    &kp Y     &kp X     &kp C     &kp V                              &kp K     &kp M     &kp SEMI  &kp DOT   &kp MINUS   
+                                                               &kp LGUI                &kp DEL
+                                                                 &kp LSHIFT          &mo 1
+                                                                   &kp SPACE       &kp BSPC
+                                                                     &kp LCTRL   &kp LALT
+            >;
+			sensor-bindings = <
+				&inc_dec_kp RIGHT    LEFT
+				&inc_dec_kp UP       DOWN
+			>;
+        };
+    };
+	
+	keymap_sensors {
+		compatible = "zmk,keymap_sensors";
+		
+		sensors = <&encoderL &encoderR>
+	};
+};

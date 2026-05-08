@@ -1,19 +1,14 @@
 // This file was generated from a template. Edit it to match your keyboard.
-// See https://docs.zephyrproject.org/4.1.0/hardware/porting/board_porting.html
-// and https://zmk.dev/docs/development/hardware-integration/new-shield for more
+// See https://zmk.dev/docs/development/hardware-integration/new-shield for more
 // instructions.
 
-/dts-v1/;
 #include <dt-bindings/zmk/matrix_transform.h>
-#include "split_sushi_lenz-layouts.dtsi"
+
+#include "sushi2-layouts.dtsi"
 
 / {
-    model = "split-sushi-lenz";
-    compatible = "split_sushi_lenz";
-
     chosen {
         zmk,physical-layout = &default_layout;
-		zmk,kscan = &kscan;
     };
 
     kscanMatrix: kscan_matrix {

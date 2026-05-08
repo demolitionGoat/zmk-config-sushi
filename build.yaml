@@ -6,7 +6,7 @@
 # `artifact-name` to assign a name to distinguish build outputs from each other:
 #
 board: [ "nice_nano" ]
-shield: [ "split_sushi_lenz_left", "split_sushi_lenz_right" ]
+shield: [ "sushi2_left", "sushi2_right" ]
 #include:
 #   - board: nice_nano
 #     shield: split_sushi_lenz_left
