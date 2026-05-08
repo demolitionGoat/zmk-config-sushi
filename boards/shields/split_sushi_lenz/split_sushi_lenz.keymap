@@ -16,7 +16,7 @@
                 &kp CARET &kp Q     &kp W     &kp O     &kp U     &kp Z          &kp B     &kp F     &kp J     &kp G     &kp P     &kp SQT
                 &kp TAB   &kp A     &kp S     &kp E     &kp R     &kp D          &kp H     &kp I     &kp N     &kp L     &kp T     &kp RET
                 &kp LT    &kp Y     &kp X     &kp C     &kp V                              &kp K     &kp M     &kp SEMI  &kp DOT   &kp MINUS   
-                                                               &kp LGUI                &mo DEL
+                                                               &kp LGUI                &kp DEL
                                                                  &kp LSHIFT          &mo 1
                                                                    &kp SPACE       &kp BSPC
                                                                      &kp LCTRL   &kp LALT
@@ -32,7 +32,7 @@
                 &kp CARET &kp Q     &kp W     &kp O     &kp U     &kp Z          &kp B     &kp F     &kp J     &kp G     &kp P     &kp SQT
                 &kp TAB   &kp A     &kp S     &kp E     &kp R     &kp D          &kp H     &kp I     &kp N     &kp L     &kp T     &kp RET
                 &kp LT    &kp Y     &kp X     &kp C     &kp V                              &kp K     &kp M     &kp SEMI  &kp DOT   &kp MINUS   
-                                                               &kp LGUI                &mo DEL
+                                                               &kp LGUI                &kp DEL
                                                                  &kp LSHIFT          &mo 1
                                                                    &kp SPACE       &kp BSPC
                                                                      &kp LCTRL   &kp LALT
