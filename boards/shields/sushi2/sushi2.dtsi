@@ -47,7 +47,7 @@
 		
 		direct {
             kscan = <&kscanDirect>;
-            row-offset = <3>; // ...and shift it to not overlap
+            row-offset = <3>;
         };
 	};
 	
