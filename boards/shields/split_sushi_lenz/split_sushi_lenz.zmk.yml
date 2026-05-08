@@ -6,7 +6,8 @@ file_format: "1"
 id: split_sushi_lenz
 name: split-sushi-lenz
 type: shield
-
+requires: 
+  - pro_micro
 # Set this to a URL that documents the keyboard.
 # url: https://example.com
 

@@ -1,4 +1,4 @@
-name: zmk-keyboards-sushi-lenz
+name: zmk-keyboard-split-sushi-lenz
 build:
   settings:
     board_root: .

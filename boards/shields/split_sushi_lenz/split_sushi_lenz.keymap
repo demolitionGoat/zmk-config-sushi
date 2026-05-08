@@ -26,7 +26,7 @@
 				&inc_dec_kp UP       DOWN
 			>;
         };
-		rightToggle_layer { // Layer 0
+		righttoggle_layer { // Layer 1
 			display-name = "toggled";
             bindings = <
                 &kp CARET &kp Q     &kp W     &kp O     &kp U     &kp Z          &kp B     &kp F     &kp J     &kp G     &kp P     &kp SQT
