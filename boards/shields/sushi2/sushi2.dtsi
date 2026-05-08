@@ -26,7 +26,7 @@
     };
 	
 	kscanDirect: kscan_direct {
-		compatible = "zmk, kscan-gpio-direct";
+		compatible = "zmk,kscan-gpio-direct";
 		wakeup-source;
 		toggle-mode;
 		input-gpios
