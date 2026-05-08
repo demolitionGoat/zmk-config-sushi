@@ -3,7 +3,6 @@
 // instructions.
 
 #include "split_sushi_lenz.dtsi"
-#include "split_sushi_lenz_left-pinctrl.dtsi"
 
 &kscan {
     // Replace these comments with the GPIO pins in the matrix for the left side.

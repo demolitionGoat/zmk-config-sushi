@@ -6,7 +6,6 @@
 /dts-v1/;
 #include <dt-bindings/zmk/matrix_transform.h>
 
-#include "split_sushi_lenz-pinctrl.dtsi"
 #include "split_sushi_lenz-layouts.dtsi"
 
 / {
