@@ -1,3 +1,7 @@
+name: zmk-keyboard-sushi-lenz-left
+
+name: zmk-keyboard-sushi-lenz-right
+
 build:
   settings:
     board_root: .

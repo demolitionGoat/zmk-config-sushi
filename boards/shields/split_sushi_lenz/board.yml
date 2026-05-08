@@ -2,11 +2,11 @@
 # See https://docs.zephyrproject.org/4.1.0/hardware/porting/board_porting.html
 # for more instructions.
 
-board:
-  name: split_sushi_lenz
-  socs:
-    - name: 
-
+#board:
+#  name: split_sushi_lenz
+#  socs:
+#    - name: 
+#
 # If your board has multiple revisions, specify them here. See
 # https://docs.zephyrproject.org/4.1.0/hardware/porting/board_porting.html#multiple-board-revisions
 

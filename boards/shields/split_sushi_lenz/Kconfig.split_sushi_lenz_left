@@ -2,5 +2,5 @@
 # See https://docs.zephyrproject.org/4.1.0/hardware/porting/board_porting.html#write-kconfig-files
 # for more information.
 
-config BOARD_SPLIT_SUSHI_LENZ_LEFT
+config SHIELD_SPLIT_SUSHI_LENZ_LEFT
     select SOC_PART_NUMBER_ABCDEFGH

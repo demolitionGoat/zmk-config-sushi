@@ -1,0 +1,7 @@
+# No whitespace after the comma or in your part name!
+config SHIELD_SPLIT_SUSHI_LENZ_LEFT
+    def_bool $(shields_list_contains,split_sushi_lenz_left)
+
+# No whitespace after the comma or in your part name!
+config SHIELD_SPLIT_SUSHI_LENZ_RIGHT
+    def_bool $(shields_list_contains,split_sushi_lenz_right)

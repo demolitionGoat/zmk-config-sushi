@@ -2,7 +2,7 @@
 # See https://docs.zephyrproject.org/4.1.0/hardware/porting/board_porting.html#write-kconfig-files
 # for more information.
 
-if BOARD_SPLIT_SUSHI_LENZ_LEFT
+if SHIELD_SPLIT_SUSHI_LENZ_LEFT
 
 config ZMK_KEYBOARD_NAME
     default "split-sushi-lenz"
@@ -14,11 +14,11 @@ config ZMK_SPLIT_BLE_CENTRAL_BATTERY_LEVEL_FETCHING
 	default y
 
 config ZMK_SPLIT_BLE_CENTRAL_BATTERY_LEVEL_PROXY
-	defaul y
+	default y
 
-endif # BOARD_SPLIT_SUSHI_LENZ_LEFT
+endif # SHIELD_SPLIT_SUSHI_LENZ_LEFT
 
-if BOARD_SPLIT_SUSHI_LENZ_LEFT || BOARD_SPLIT_SUSHI_LENZ_RIGHT
+if SHIELD_SPLIT_SUSHI_LENZ_LEFT || SHIELD_SPLIT_SUSHI_LENZ_RIGHT
 
 if USB
 
@@ -40,4 +40,4 @@ config BT
 # config BT_CTLR
 #     default BT
 
-endif # BOARD_SPLIT_SUSHI_LENZ_LEFT || BOARD_SPLIT_SUSHI_LENZ_RIGHT
+endif # SHIELD_SPLIT_SUSHI_LENZ_LEFT || SHIELD_SPLIT_SUSHI_LENZ_RIGHT

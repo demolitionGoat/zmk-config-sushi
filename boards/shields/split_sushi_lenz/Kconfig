@@ -2,11 +2,11 @@
 # See https://docs.zephyrproject.org/4.1.0/hardware/porting/board_porting.html#write-kconfig-files
 # for more information.
 
-if BOARD_SPLIT_SUSHI_LENZ_LEFT || BOARD_SPLIT_SUSHI_LENZ_RIGHT
+if SHIELD_SPLIT_SUSHI_LENZ_LEFT || SHIELD_SPLIT_SUSHI_LENZ_RIGHT
 
 # Define any board-specific Kconfig options here.
 # If there are none, you may delete this file.
 CONFIG_EC11=y
 CONFIG_EC11_TRIGGER_GLOBAL_THREAD=y
 
-endif # BOARD_SPLIT_SUSHI_LENZ_LEFT || BOARD_SPLIT_SUSHI_LENZ_RIGHT
+endif # SHIELD_SPLIT_SUSHI_LENZ_LEFT || SHIELD_SPLIT_SUSHI_LENZ_RIGHT
