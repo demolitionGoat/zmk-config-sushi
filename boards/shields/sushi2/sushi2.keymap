@@ -12,7 +12,7 @@
 		btESC: bluetooth_clear_slot_or_escape {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp KP_ESC>, <&bt BT_CLR>;
+            bindings = <&kp ESC>, <&bt BT_CLR>;
             mods = <(MOD_LCTRL)>;
         };
         bt0N7: bluetooth_slot_0_or_keypad_nr7 {
