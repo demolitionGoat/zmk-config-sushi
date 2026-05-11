@@ -44,10 +44,4 @@
 			>;
         };
     };
-	
-//	keymap_sensors {
-//		compatible = "zmk,keymap_sensors";
-//		
-//		sensors = <&encoderL &encoderR>;
-//	};
 };

@@ -1,6 +1,4 @@
-// This file was generated from a template. Edit it to match your keyboard.
-// See https://zmk.dev/docs/development/hardware-integration/new-shield for more
-// instructions.
+// Common Devicetree. included in both sides.
 
 #include <dt-bindings/zmk/matrix_transform.h>
 
@@ -16,8 +14,6 @@
         diode-direction = "col2row";
         wakeup-source;
 
-        // Replace these comments with the GPIO pins in the matrix..
-        // See https://zmk.dev/docs/development/hardware-integration/new-shield#shield-overlays
         row-gpios
             = <&pro_micro 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             , <&pro_micro 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
@@ -51,25 +47,29 @@
         };
 	};
 	
-	encoderL: encoder_left {
+	left_encoder: encoder_left {
         compatible = "alps,ec11";
         a-gpios = <&pro_micro 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&pro_micro 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        steps = <30>;
+        steps = <20>;
         status = "disabled";
     };
 	
-	encoderR: encoder_right {
+	right_encoder: encoder_right {
         compatible = "alps,ec11";
-        a-gpios = <&pro_micro 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        b-gpios = <&pro_micro 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        steps = <30>;
+        a-gpios = <&pro_micro 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        b-gpios = <&pro_micro 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        steps = <20>;
         status = "disabled";
+    };
+	
+	sensors: sensors {
+        compatible = "zmk,keymap-sensors";
+        sensors = <&left_encoder &right_encoder>;
+        triggers-per-rotation = <20>;
     };
 	
     default_transform: default_transform {
-        // See https://zmk.dev/docs/development/hardware-integration/new-shield#matrix-transform
-        // for how to configure this
         compatible = "zmk,matrix-transform";
         columns = <12>;
         rows = <6>;
