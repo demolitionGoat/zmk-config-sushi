@@ -2,12 +2,52 @@
 // See https://zmk.dev/docs/development/hardware-integration/new-shield for more instructions.
 
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include "keys_de.h"
 
 / {
-    // Define a default keymap here.
-    // See https://zmk.dev/docs/development/hardware-integration/new-shield#default-keymap.
+    behaviors {
+		// bluetooth layer controls
+		btESC: bluetooth_clear_slot_or_escape {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp KP_ESC>, <&bt BT_CLR>;
+            mods = <(MOD_LCTRL)>;
+        };
+        bt0N7: bluetooth_slot_0_or_keypad_nr7 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp KP_N7>, <&bt BT_SEL 0>;
+            mods = <(MOD_LCTRL)>;
+        };
+        bt1N8: bluetooth_slot_0_or_keypad_nr8 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp KP_N7>, <&bt BT_SEL 1>;
+            mods = <(MOD_LCTRL)>;
+        };
+        bt2N9: bluetooth_slot_0_or_keypad_nr9 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp KP_N7>, <&bt BT_SEL 2>;
+            mods = <(MOD_LCTRL)>;
+        };
+        bt3SL: bluetooth_slot_0_or_slash {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp KP_N7>, <&bt BT_SEL 3>;
+            mods = <(MOD_LCTRL)>;
+        };
+        bt4PS: bluetooth_slot_0_or_printscreen {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp KP_N7>, <&bt BT_SEL 4>;
+            mods = <(MOD_LCTRL)>;
+        };
+    };
+
+    // default keymap
     keymap {
         compatible = "zmk,keymap";
 
@@ -30,17 +70,17 @@
 		righttoggle_layer { // Layer 1
 			display-name = "toggled";
             bindings = <
-                &kp DE_EXCL &kp DE_BSLH     &kp DE_DQT  &kp DE_O_UMLAUT &kp DE_U_UMLAUT &kp DE_QMARK   &kp ESC   &kp KP_N7 &kp KP_N8 &kp KP_N9 &kp DE_SLASH  &kp PSCRN
+                &kp DE_EXCL &kp DE_BSLH     &kp DE_DQT  &kp DE_O_UMLAUT &kp DE_U_UMLAUT &kp DE_QMARK   &btESC    &bt0N7    &bt1N8    &bt2N9    &bt3SL        &bt4PS
                 &trans      &kp DE_A_UMLAUT &kp DE_LBRC &kp LPAR        &kp RPAR        &kp DE_RBRC    &kp N1    &kp N4    &kp N5    &kp N6    &kp DE_PLUS   &trans
                 &kp F5      &kp F12         &kp DE_SZ   &kp DE_LBKT     &kp DE_RBKT                              &kp KP_N1 &kp KP_N2 &kp N3    &trans        &trans
-                                                                                 &trans                  &kp INS
+                                                                                 &kp C_PP                &kp C_MUTE
                                                                                    &trans              &trans
                                                                                      &trans          &trans
                                                                                        &trans      &trans
             >;
 			sensor-bindings = <
-				&inc_dec_kp &trans	&trans 
-				&inc_dec_kp &trans	&trans
+				&inc_dec_kp &C_NEXT	    &C_PREV
+				&inc_dec_kp &C_VOL_UP   &C_VOL_DN
 			>;
         };
     };
