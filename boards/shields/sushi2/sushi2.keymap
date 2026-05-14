@@ -21,28 +21,28 @@
             bindings = <&kp KP_N7>, <&bt BT_SEL 0>;
             mods = <(MOD_LCTL|MOD_RCTL)>;
         };
-        bt1N8: bluetooth_slot_0_or_keypad_nr8 {
+        bt1N8: bluetooth_slot_1_or_keypad_nr8 {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp KP_N7>, <&bt BT_SEL 1>;
+            bindings = <&kp KP_N8>, <&bt BT_SEL 1>;
             mods = <(MOD_LCTL|MOD_RCTL)>;
         };
-        bt2N9: bluetooth_slot_0_or_keypad_nr9 {
+        bt2N9: bluetooth_slot_2_or_keypad_nr9 {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp KP_N7>, <&bt BT_SEL 2>;
+            bindings = <&kp KP_N9>, <&bt BT_SEL 2>;
             mods = <(MOD_LCTL|MOD_RCTL)>;
         };
-        bt3SL: bluetooth_slot_0_or_slash {
+        bt3SL: bluetooth_slot_3_or_slash {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp KP_N7>, <&bt BT_SEL 3>;
+            bindings = <&kp DE_SLASH>, <&bt BT_SEL 3>;
             mods = <(MOD_LCTL|MOD_RCTL)>;
         };
-        bt4PS: bluetooth_slot_0_or_printscreen {
+        bt4PS: bluetooth_slot_4_or_printscreen {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp KP_N7>, <&bt BT_SEL 4>;
+            bindings = <&kp PSCRN>, <&bt BT_SEL 4>;
             mods = <(MOD_LCTL|MOD_RCTL)>;
         };
     };
@@ -70,7 +70,7 @@
 		righttoggle_layer { // Layer 1
 			display-name = "toggled";
             bindings = <
-                &kp A &kp DE_BSLH     &kp DE_DQT  &kp DE_O_UMLAUT &kp DE_U_UMLAUT &kp DE_QMARK   &btESC    &bt0N7    &bt1N8    &bt2N9    &bt3SL        &bt4PS
+                &kp DE_EXCL &kp DE_BSLH     &kp DE_DQT  &kp DE_O_UMLAUT &kp DE_U_UMLAUT &kp DE_QMARK   &btESC    &bt0N7    &bt1N8    &bt2N9    &bt3SL        &bt4PS
                 &trans      &kp DE_A_UMLAUT &kp DE_LBRC &kp LPAR        &kp RPAR        &kp DE_RBRC    &kp N1    &kp N4    &kp N5    &kp N6    &kp DE_PLUS   &trans
                 &kp F5      &kp F12         &kp DE_SZ   &kp DE_LBKT     &kp DE_RBKT                              &kp KP_N1 &kp KP_N2 &kp N3    &trans        &trans
                                                                                  &kp C_PP                &kp C_MUTE
