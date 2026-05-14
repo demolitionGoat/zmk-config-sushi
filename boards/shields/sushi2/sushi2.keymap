@@ -13,37 +13,37 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp ESC>, <&bt BT_CLR>;
-            mods = <(MOD_LCTL)>;
+            mods = <(MOD_LCTL|MOD_RCTL)>;
         };
         bt0N7: bluetooth_slot_0_or_keypad_nr7 {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp KP_N7>, <&bt BT_SEL 0>;
-            mods = <(MOD_LCTL)>;
+            mods = <(MOD_LCTL|MOD_RCTL)>;
         };
         bt1N8: bluetooth_slot_0_or_keypad_nr8 {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp KP_N7>, <&bt BT_SEL 1>;
-            mods = <(MOD_LCTL)>;
+            mods = <(MOD_LCTL|MOD_RCTL)>;
         };
         bt2N9: bluetooth_slot_0_or_keypad_nr9 {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp KP_N7>, <&bt BT_SEL 2>;
-            mods = <(MOD_LCTL)>;
+            mods = <(MOD_LCTL|MOD_RCTL)>;
         };
         bt3SL: bluetooth_slot_0_or_slash {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp KP_N7>, <&bt BT_SEL 3>;
-            mods = <(MOD_LCTL)>;
+            mods = <(MOD_LCTL|MOD_RCTL)>;
         };
         bt4PS: bluetooth_slot_0_or_printscreen {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp KP_N7>, <&bt BT_SEL 4>;
-            mods = <(MOD_LCTL)>;
+            mods = <(MOD_LCTL|MOD_RCTL)>;
         };
     };
 
@@ -54,7 +54,7 @@
         default_layer { // Layer 0
 			display-name = "base";
             bindings = <
-                &kp DE_CARET  &kp DE_Q  &kp W     &kp O     &kp U     &kp DE_Z       &kp B     &kp F     &kp J     &kp G       &kp P      &kp SQT
+                &kp GRAVE	  &kp DE_Q  &kp W     &kp O     &kp U     &kp DE_Z       &kp B     &kp F     &kp J     &kp G       &kp P      &kp SQT
                 &kp TAB       &kp A     &kp S     &kp DE_E  &kp R     &kp D          &kp H     &kp I     &kp N     &kp L       &kp T      &kp RET
                 &kp DE_LT     &kp DE_Y  &kp X     &kp C     &kp V                              &kp K     &kp DE_M  &kp DE_SEMI &kp DE_DOT &kp DE_MINUS
                                                                  &kp LGUI                &kp DEL
