@@ -7,6 +7,11 @@
 #
 board: [ "nice_nano" ]
 shield: [ "sushi2_left", "sushi2_right" ]
+---
+include:
+  - board: nice_nano
+    shield: sushi2_left
+    snippet: zmk-usb-logging
 #include:
 #   - board: nice_nano
 #     shield: split_sushi_lenz_left
