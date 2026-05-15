@@ -46,6 +46,12 @@
             mods = <(MOD_LCTL|MOD_RCTL)>;
         };
     };
+	
+	sensors: sensors {
+        compatible = "zmk,keymap-sensors";
+        sensors = <&left_encoder &right_encoder>;
+        triggers-per-rotation = <20>;
+    };
 
     // default keymap
     keymap {
