@@ -7,6 +7,13 @@
 #include "keys_de.h"
 
 / {
+
+	sensors: sensors {
+        compatible = "zmk,keymap-sensors";
+        sensors = <&left_encoder &right_encoder>;
+        triggers-per-rotation = <20>;
+    };
+	
     behaviors {
 		// bluetooth layer controls
 		btESC: bluetooth_clear_slot_or_escape {
