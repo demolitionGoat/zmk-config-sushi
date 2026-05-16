@@ -7,7 +7,6 @@
 #
 board: [ "nice_nano" ]
 shield: [ "sushi2_left", "sushi2_right" ]
----
 #include:
 #  - board: nice_nano
 #    shield: sushi2_left
@@ -27,4 +26,4 @@ shield: [ "sushi2_left", "sushi2_right" ]
 #     cmake-args: -DCONFIG_ZMK_STUDIO=y
 #     artifact-name: corne_left_with_studio
 #
-#---
+---
