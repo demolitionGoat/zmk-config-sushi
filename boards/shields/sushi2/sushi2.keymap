@@ -55,7 +55,7 @@
         default_layer { // Layer 0
 			display-name = "base";
             bindings = <
-                &kp GRAVE	  &kp DE_Q  &kp W     &kp O     &kp U     &kp DE_Z       &kp B     &kp F     &kp J     &kp G       &kp P      &kp SQT
+                &kp GRAVE	  &kp DE_Q  &kp W     &kp O     &kp U     &kp DE_Z       &kp B     &kp F     &kp J     &kp G       &kp P      &kp DE_SQT
                 &kp TAB       &kp A     &kp S     &kp DE_E  &kp R     &kp D          &kp H     &kp I     &kp N     &kp L       &kp T      &kp RET
                 &kp DE_LT     &kp DE_Y  &kp X     &kp C     &kp V                              &kp K     &kp DE_M  &kp DE_SEMI &kp DE_DOT &kp DE_MINUS
                                                                  &kp LGUI                &kp DEL
