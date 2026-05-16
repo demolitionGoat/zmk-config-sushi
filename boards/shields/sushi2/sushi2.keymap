@@ -48,7 +48,7 @@
         };
     };
 
-    // default keymap
+    // default keymap for german layout
     keymap {
         compatible = "zmk,keymap";
 
@@ -72,7 +72,7 @@
 			display-name = "toggled";
             bindings = <
                 &kp DE_EXCL &kp DE_BSLH     &kp DE_DQT  &kp DE_O_UMLAUT &kp DE_U_UMLAUT &kp DE_QMARK   &btESC    &bt0N7    &bt1N8    &bt2N9    &bt3SL        &bt4PS
-                &trans      &kp DE_A_UMLAUT &kp DE_LBRC &kp LPAR        &kp RPAR        &kp DE_RBRC    &kp DE_N0 &kp N4    &kp N5    &kp N6    &kp DE_PLUS   &trans
+                &trans      &kp DE_A_UMLAUT &kp DE_LBRC &kp DE_LPAR     &kp DE_RPAR     &kp DE_RBRC    &kp DE_N0 &kp N4    &kp N5    &kp N6    &kp DE_PLUS   &trans
                 &kp F5      &kp F12         &kp DE_SZ   &kp DE_LBKT     &kp DE_RBKT                              &kp KP_N1 &kp KP_N2 &kp N3    &trans        &trans
                                                                                  &kp C_PP                &kp C_MUTE
                                                                                    &trans              &trans
