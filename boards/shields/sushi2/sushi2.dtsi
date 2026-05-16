@@ -62,6 +62,12 @@
         steps = <80>;
         status = "disabled";
     };
+
+	sensors: sensors {
+        compatible = "zmk,keymap-sensors";
+        sensors = <&left_encoder &right_encoder>;
+        triggers-per-rotation = <20>;
+    };
 	
     default_transform: default_transform {
         compatible = "zmk,matrix-transform";
