@@ -16,13 +16,4 @@ config ZMK_SPLIT
 config ZMK_BLE
 	default y
 
-config BT_CTLR_PHY_2M
-	default n
-
-config EC11
-	default y
-
-config EC11_TRIGGER_GLOBAL_THREAD
-	default y
-
 endif # SHIELD_SUSHI2_LEFT || SHIELD_SUSHI2_RIGHT
